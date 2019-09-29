@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  jenkins:
+    build: jenkins
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - docker:/var/lib/docker
+    privileged: true
+    ports:
+      - 8080:8080
+
+networks:
+    default:
+      external:
+        name: platform_services
+
+volumes:
+  jenkins_home:
+  docker:

@@ -1,0 +1,3 @@
+#!/bin/sh
+mkdir -p /var/backups/gp/jenkins/var/jenkins_home/
+rsync -a --delete /var/jenkins_home/ /var/backups/gp/jenkins/var/jenkins_home/
