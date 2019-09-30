@@ -12,6 +12,8 @@ The service is formed by one container:
 
 - **jenkins**: based on [teecke/jenkins-dind](https://hub.docker.com/r/teecke/jenkins-dind) docker image.
 
+Use the `docker-compose.yml.sample` file as the source for your docker-compose configuration file.
+
 ## Operation
 
 You must create a network called "platform_services" before start the services.
