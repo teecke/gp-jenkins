@@ -1,13 +1,13 @@
-version: '3.4'
+version: '3.7'
 services:
   jenkins:
-    build: jenkins
+    image: teecke/gp-jenkins:0.2.0
+    ports:
+      - 8080:8080
+    privileged: true
     volumes:
       - jenkins_home:/var/jenkins_home
       - docker:/var/lib/docker
-    privileged: true
-    ports:
-      - 8080:8080
 
 networks:
     default:
