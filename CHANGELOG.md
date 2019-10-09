@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.2.1 (2019-10-09)
+
+### Update
+
+* Use directory instead named volume for jenkins service in docker-compose sample ([ae01c8a](https://github.com/teecke/gp-jenkins/commit/ae01c8a))
+
+### Build
+
+* Update Auto Release Log adding v0.2.1 info with JPL ([63fcf3c](https://github.com/teecke/gp-jenkins/commit/63fcf3c))
+* Use environment variable for mail notificacions targets ([5767a71](https://github.com/teecke/gp-jenkins/commit/5767a71))
+
+### Docs
+
+* Update main readme file ([bce1934](https://github.com/teecke/gp-jenkins/commit/bce1934))
+* Generate v0.2.0 changelog with JPL ([53c1aa7](https://github.com/teecke/gp-jenkins/commit/53c1aa7))
+
 ## v0.2.0 (2019-09-30)
 
 ### New
