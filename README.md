@@ -2,9 +2,7 @@
 
 ## Overview
 
-Teecke Generic Platform Jenkins Service.
-
-Docker-ompose simple configuration to bring up the Jenkins service to the Generic Platform.
+Docker image and docker-compose sample configuration to bring up a Jenkins Service to the Teecke [Docker Generic Platform (GP)](https://github.com/teecke/docker-generic-platform).
 
 ## Configuration
 
@@ -12,42 +10,28 @@ The service is formed by one container:
 
 - **jenkins**: based on [teecke/jenkins-dind](https://hub.docker.com/r/teecke/jenkins-dind) docker image.
 
-Use the `docker-compose.yml.sample` file as the source for your docker-compose configuration file.
-
 ## Operation
 
-You must create a network called "platform_services" before start the services.
+1. Use the `docker-compose.yml.sample` file as your docker-compose configuration file.
 
-```console
-docker network create platform_services
-```
+2. Create a docker network called "platform_services" before start the services with `docker network create platform_services`.
 
-Then you can start the service with `docker-compose up -d` and stop it with `docker-compose stop` commands.
+3. Create a directory called `jenkins_home` and place your static files within, or leave Jenkins to create a new one with the start of the service.
 
-After the first run you can configure the service pointing a browser to <http://jenkins:8080>
+4. Start with `docker-compose up -d`.
 
-There are two volumes created. All data and configuration are on those volumes, so never delete they.
+5. Open the url <http://localhost:8080> in a browser and access to the Jenkins GUI.
 
-```console
-$ docker volume ls|grep "jenkins\|VOLUME"
-DRIVER              VOLUME NAME
-local               jenkins_docker
-local               jenkins_jenkins_home
-```
+6. Manage backups of your files:
 
-There are also two tasks `cleanup` and `backup` that you can execute as stand-alone
+   1. Execute the cleanup task `docker-compose exed jenkins cleanup` to remove Jenkins workspace and docker disposable data1.
+   2. Make a backup executing `docker-compose exec jenkins backup`.
+   3. Find the current backup within the `/var/backups/gp/jenkins/` of the container.
+   4. Extract the current backup executing `docker cp $(docker-compose ps -q jenkins):/var/backups/gp gp`.
 
-```console
-$ docker-compose exec jenkins cleanup
+7. Stop the platform with `docker-compose stop`.
 
-[...]
-
-$ docker-compose exec jenkins backup
-```
-
-...or using [Teecke Generic Platform](https://github.com/teecke/generic-platform) project.
-
-The backup data will be stored in the `/var/backups/gp/jenkins/` directory of the container. You can copy the backup files with a simple "docker cp" command `docker cp $(docker-compose ps -q jenkins):/var/backups/gp gp`
+You can use this docker piece with the [Docker Generic Platform](https://github.com/teecke/docker-generic-platform) project.
 
 ## Known issues
 
