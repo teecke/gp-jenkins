@@ -1,3 +1,4 @@
 #!/bin/sh
+docker rm -f $(docker ps -aq) || true
 docker system prune --all --volumes -f || true
 rm -rf /var/jenkins_home/workspace/*
