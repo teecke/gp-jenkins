@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.2 (2020-01-24)
+
+### Update
+
+* Review devcontrol scripts ([537d360](https://github.com/teecke/gp-jenkins/commit/537d360))
+
+### Build
+
+* Update Auto Release Log adding v0.3.2 info with JPL ([5e49936](https://github.com/teecke/gp-jenkins/commit/5e49936))
+
+### Docs
+
+* Generate v0.3.1 changelog with JPL ([b272c26](https://github.com/teecke/gp-jenkins/commit/b272c26))
+
 ## v0.3.1 (2020-01-24)
 
 ### Fix
