@@ -44,7 +44,7 @@ EOF
                 echo "The 'platform_services' docker network already exists, skipping"
             fi
             # Create directories
-            for directory in data data/jenkins_home; do
+            for directory in data data/var data/jenkins_home; do
                 if [ ! -d ${directory} ]; then
                     echo -n "- Creating '${directory}' directory..."
                     mkdir ${directory}
