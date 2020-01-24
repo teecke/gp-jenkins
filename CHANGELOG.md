@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.3.0 (2020-01-24)
+
+### New
+
+* Add assets install devcontrol action ([718ebab](https://github.com/teecke/gp-jenkins/commit/718ebab))
+* Add .gitignore file ([e6d02e6](https://github.com/teecke/gp-jenkins/commit/e6d02e6))
+
+### Upgrade
+
+* Service refactor with assets install ([f74a206](https://github.com/teecke/gp-jenkins/commit/f74a206))
+
+### Fix
+
+* Don't remove running containers on cleanup ([6e8dd85](https://github.com/teecke/gp-jenkins/commit/6e8dd85))
+
+### Build
+
+* Update Auto Release Log adding v0.3.0 info with JPL ([70d96f0](https://github.com/teecke/gp-jenkins/commit/70d96f0))
+
+### Docs
+
+* Generate v0.2.1 changelog with JPL ([dab051d](https://github.com/teecke/gp-jenkins/commit/dab051d))
+
 ## v0.2.1 (2019-10-09)
 
 ### Update
