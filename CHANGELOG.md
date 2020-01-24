@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3.3 (2020-01-24)
+
+### Fix
+
+* Use build instead context in the docker-compose dist file ([06d89ec](https://github.com/teecke/gp-jenkins/commit/06d89ec))
+
+### Build
+
+* Update Auto Release Log adding v0.3.3 info with JPL ([d5fcdfe](https://github.com/teecke/gp-jenkins/commit/d5fcdfe))
+
+### Docs
+
+* Clarify main readme ([33f72ca](https://github.com/teecke/gp-jenkins/commit/33f72ca))
+* Generate v0.3.2 changelog with JPL ([7f05df8](https://github.com/teecke/gp-jenkins/commit/7f05df8))
+
 ## v0.3.2 (2020-01-24)
 
 ### Update
