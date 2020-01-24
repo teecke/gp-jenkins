@@ -14,22 +14,20 @@ The service is formed by one container:
 
 1. Use the `docker-compose.yml.sample` file as your docker-compose configuration file.
 
-2. Create a docker network called "platform_services" before start the services with `docker network create platform_services`.
+2. Install assets with `devcontrol assets-install`.
 
-3. Create a directory called `jenkins_home` and place your static files within, or leave Jenkins to create a new one with the start of the service.
+3. Start with `docker-compose up -d`.
 
-4. Start with `docker-compose up -d`.
+4. Open the url <http://localhost:8080> in a browser and access to the Jenkins GUI.
 
-5. Open the url <http://localhost:8080> in a browser and access to the Jenkins GUI.
-
-6. Manage backups of your files:
+5. Manage backups of your files:
 
    1. Execute the cleanup task `docker-compose exed jenkins cleanup` to remove Jenkins workspace and docker disposable data1.
    2. Make a backup executing `docker-compose exec jenkins backup`.
    3. Find the current backup within the `/var/backups/gp/jenkins/` of the container.
    4. Extract the current backup executing `docker cp $(docker-compose ps -q jenkins):/var/backups/gp gp`.
 
-7. Stop the platform with `docker-compose stop`.
+6. Stop the platform with `docker-compose stop`.
 
 You can use this docker piece with the [Docker Generic Platform](https://github.com/teecke/docker-generic-platform) project.
 
