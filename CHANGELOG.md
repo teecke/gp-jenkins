@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3.1 (2020-01-24)
+
+### Fix
+
+* Use absolute path for the local data shared volume ([0b9625f](https://github.com/teecke/gp-jenkins/commit/0b9625f))
+
+### Build
+
+* Update Auto Release Log adding v0.3.1 info with JPL ([f2dd8f9](https://github.com/teecke/gp-jenkins/commit/f2dd8f9))
+
+### Docs
+
+* Update main readme file ([f04e96c](https://github.com/teecke/gp-jenkins/commit/f04e96c))
+* Generate v0.3.0 changelog with JPL ([4530563](https://github.com/teecke/gp-jenkins/commit/4530563))
+
 ## v0.3.0 (2020-01-24)
 
 ### New
