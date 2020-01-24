@@ -2,6 +2,7 @@ version: '3.7'
 services:
   jenkins:
     image: teecke/gp-jenkins:0.3.3
+    build: jenkins
     ports:
       - 8080:8080
     privileged: true
