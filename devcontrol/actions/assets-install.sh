@@ -1,17 +1,19 @@
 #!/bin/bash
 
-# @description Run bash linter
+set -eu
+
+# @description Install item assets
 #
 # @example
-#   run-bash-linter
+#   assets-install
 #
 # @arg $1 Task: "brief", "help" or "exec"
 #
-# @exitcode The result of the shellckeck
+# @exitcode The result of the assets installation
 #
 # @stdout "Not implemented" message if the requested task is not implemented
 #
-function run-bash-linter() {
+function assets-install() {
 
     # Init
     local briefMessage
@@ -21,7 +23,7 @@ function run-bash-linter() {
     helpMessage=$(cat <<EOF
 Install the Jenkins service assets:
 
-* Create the "data/jenkins_home" directory with all permissions (777)
+* Create the "data/var/jenkins_home" directory with all permissions (777)
 * Create the network "platform_services"
 EOF
 )
@@ -44,7 +46,7 @@ EOF
                 echo "The 'platform_services' docker network already exists, skipping"
             fi
             # Create directories
-            for directory in data data/var data/jenkins_home; do
+            for directory in data data/var data/var/jenkins_home; do
                 if [ ! -d ${directory} ]; then
                     echo -n "- Creating '${directory}' directory..."
                     mkdir ${directory}
@@ -64,4 +66,4 @@ EOF
 }
 
 # Main
-run-bash-linter "$@"
+assets-install "$@"
