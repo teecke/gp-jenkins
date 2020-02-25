@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.4.2 (2020-02-25)
+
+### Update
+
+* Use next image tag in docker-compose file ([1b85e96](https://github.com/teecke/gp-jenkins/commit/1b85e96))
+
+### Build
+
+* Update Auto Release Log adding v0.4.2 info with JPL ([0c3797b](https://github.com/teecke/gp-jenkins/commit/0c3797b))
+* Use more generig gp pipeline ([35726fd](https://github.com/teecke/gp-jenkins/commit/35726fd))
+
+### Docs
+
+* Generate v0.4.1 changelog with JPL ([cbe7de0](https://github.com/teecke/gp-jenkins/commit/cbe7de0))
+
 ## v0.4.1 (2020-02-01)
 
 ### Update
