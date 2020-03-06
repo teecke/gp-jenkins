@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.0 (2020-03-06)
+
+### Upgrade
+
+* Use jenkins-dind v2.204.4 ([e7f4d95](https://github.com/teecke/gp-jenkins/commit/e7f4d95))
+
+### Build
+
+* Update Auto Release Log adding v0.6.0 info with JPL ([5d9c3c0](https://github.com/teecke/gp-jenkins/commit/5d9c3c0))
+
+### Docs
+
+* Generate v0.5.0 changelog with JPL ([8fad20d](https://github.com/teecke/gp-jenkins/commit/8fad20d))
+
 ## v0.5.0 (2020-03-01)
 
 ### Upgrade
