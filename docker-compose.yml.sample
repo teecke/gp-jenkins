@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   jenkins:
-    image: teecke/gp-jenkins:0.5.0
+    image: teecke/gp-jenkins:0.6.0
     build: jenkins
     ports:
       - 8080:8080
