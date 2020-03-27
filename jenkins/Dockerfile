@@ -1,4 +1,4 @@
-FROM teecke/jenkins-dind:2.204.5
+FROM teecke/jenkins-dind:2.222.1
 
 # Packages
 RUN apk add --no-cache rsync openjdk8 jq libxml2-utils docker-compose
