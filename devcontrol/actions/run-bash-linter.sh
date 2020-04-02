@@ -27,6 +27,7 @@ Run shellckheck test over the following scripts:
 * devcontrol/global/*.sh
 * */backup
 * */cleanup
+* jenkins/*.sh
 EOF
 )
 
@@ -40,7 +41,7 @@ EOF
             ;;
         exec)
             exitCode=0
-            for file in devcontrol/actions/*.sh devcontrol/global/*.sh */backup */cleanup; do
+            for file in devcontrol/actions/*.sh devcontrol/global/*.sh */backup */cleanup jenkins/*.sh; do
                 echo -n "Running shellcheck bash linter over ${file}..."
                 failed=0
                 docker run --network none -i --rm --workdir /workspace -v "$(pwd)":/workspace koalaman/shellcheck-alpine shellcheck -x "${file}" || failed=1
