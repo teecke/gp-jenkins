@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please visit https://github.com/tpbtools/gp-jenkins
+
 # Generic Platform - Jenkins Service
 
 ## Overview
