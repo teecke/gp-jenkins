@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/gp-jenkins
+Please visit https://github.com/ayudadigital/gp-jenkins
 
 # Generic Platform - Jenkins Service
 
